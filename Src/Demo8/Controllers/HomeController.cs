@@ -20,5 +20,9 @@ namespace Demo8.Controllers
         {
             return View();
         }
+        
+        public ActionResult ChildPage() {
+            return PartialView();
+        }
     }
 }
