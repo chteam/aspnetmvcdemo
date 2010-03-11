@@ -12,8 +12,8 @@ namespace Demo8.Controllers
         public ActionResult Index()
         {
             ViewData["Message"] = "Welcome to ASP.NET MVC!";
-
-            return View();
+            //return View();
+            return View("ValidateDemo");
         }
 
         public ActionResult About()
