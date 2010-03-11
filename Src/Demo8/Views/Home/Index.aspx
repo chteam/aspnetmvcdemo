@@ -10,7 +10,7 @@
     
     <div id="udpatePanel" style="background:black"></div>
     <%=Ajax.ActionLink("载入页面到Div", "ChildPage", new AjaxOptions { UpdateTargetId = "udpatePanel"})%>
-    <%=Ajax.ActionLink("载入页面到Div,有确认弹出框", "ChildPage", new AjaxOptions { UpdateTargetId = "udpatePanel",Confirm="确认加载"})%>
+    <%=Ajax.ActionLink("载入页面到Div,有确认弹出框", "ChildPage", new AjaxOptions { UpdateTargetId = "udpatePanel", Confirm = "确认加载" })%>
     <%=Ajax.ActionLink("载入失败", "ChildPage1", new AjaxOptions
 {
     UpdateTargetId = "udpatePanel",
@@ -23,7 +23,10 @@
      OnBegin = "alert('开始载入')",
      OnComplete = "alert('完成')",    
 })%>
-
+ <%using (Ajax.BeginForm("ChildPage", new AjaxOptions { UpdateTargetId = "udpatePanel", Confirm="ddd" }))
+   {%>
+   <input type="submit" />
+ <%} %>
     <div id="divLoading">
     </div>
 
