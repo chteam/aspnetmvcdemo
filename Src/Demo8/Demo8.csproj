@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ValiDemoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -78,7 +79,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Views\Home\ChildPage.ascx" />
-    <Content Include="Views\Home\ValidateDemo.aspx" />
+    <Content Include="Views\ValiDemo\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

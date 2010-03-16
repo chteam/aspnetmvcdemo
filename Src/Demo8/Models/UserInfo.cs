@@ -9,12 +9,15 @@ namespace Demo8.Models
    // [MetadataType(typeof(UserMetaType))]
     public class UserInfo
     {
-        [Required]
+        [Required(ErrorMessage="姓名必填")]
         [StringLength(50)]
         public string Name { get; set; }
         [Required]
         [Range(1, 120)]
         public int Age { get; set; }
+        [Required]
+        [RegularExpression(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*")]
+        public string Email { get; set; }
     }
     public class UserMetaType
     {
