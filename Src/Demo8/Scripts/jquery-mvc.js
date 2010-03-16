@@ -15,8 +15,6 @@ var Sys = {
                     }
                 }
                 var href = $(s).attr("href");
-                //$(s).attr("href", "javascript:void(0);");
-
                 $.get(href, {}, function (r) { $('#' + json.updateTargetId).html(r); });
                 return false;
             }
