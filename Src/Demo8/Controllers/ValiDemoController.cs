@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Demo8.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Demo8.Controllers
 {
@@ -11,6 +12,7 @@ namespace Demo8.Controllers
     {
         public ActionResult Index()
         {
+         
             return View();
         }
         public ActionResult Process(UserInfo user)
@@ -19,6 +21,14 @@ namespace Demo8.Controllers
                 return View("Index",user);
             return Content("Success");
         }
-
+        public ActionResult ProcessCustom(int? uid)
+        {
+            if (!uid.HasValue)
+            {
+                ViewData.ModelState.AddModelError("uid", "uid不能为空");
+                return View("Index");
+            }
+            return Content("Success");
+        }
     }
 }

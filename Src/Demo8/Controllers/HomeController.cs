@@ -12,16 +12,10 @@ namespace Demo8.Controllers
     {
         public ActionResult Index()
         {
-            return View("ValidateDemo", new UserInfo()
-            {
-                Name = "abc",
-                Age = 11
-            });
+            return View();
         }
         public ActionResult Process(UserInfo user)
         {
-            if (!ViewData.ModelState.IsValid)
-                return View("ValidateDemo", user);
             return Content("Success");
         }
  

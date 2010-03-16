@@ -79,6 +79,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Views\Home\ChildPage.ascx" />
+    <Content Include="Views\ValiDemo\Custom.aspx" />
     <Content Include="Views\ValiDemo\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
