@@ -13,7 +13,7 @@ namespace Demo8.Controllers
         public ActionResult Index()
         {
          
-            return View();
+            return View(new UserInfo());
         }
         public ActionResult Process(UserInfo user)
         {

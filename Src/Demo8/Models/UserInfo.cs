@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using Demo8.DataAnnotations;
 
 namespace Demo8.Models
 {
@@ -16,14 +17,13 @@ namespace Demo8.Models
         [Range(1, 120)]
         public int Age { get; set; }
         [Required]
-        [RegularExpression(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*")]
+      //  [RegularExpression(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*")]
+       [Email]
         public string Email { get; set; }
     }
     public class UserMetaType
     {
-      
         public string Name { get; set; }
-       
         public int Age { get; set; }
     }
 }
