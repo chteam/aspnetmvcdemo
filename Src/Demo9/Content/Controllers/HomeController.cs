@@ -7,8 +7,10 @@ using System.Web.Mvc;
 namespace Demo9.Controllers
 {
     [HandleError]
+
     public class HomeController : Controller
     {
+        [Authorize]
         public ActionResult Index()
         {
             ViewData["Message"] = "Welcome to ASP.NET MVC!";
@@ -19,5 +21,9 @@ namespace Demo9.Controllers
         {
             return View();
         }
+        public ActionResult GetIt(int ip) {
+            return Content("sss");
+        }
+
     }
 }

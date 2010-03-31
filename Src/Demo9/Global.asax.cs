@@ -15,7 +15,11 @@ namespace Demo9
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+  routes.MapRoute(
+                "Default1",                                              // Route name
+                "Home/GetIt/{ip}",                           // URL with parameters
+                new { controller = "Home", action = "Index"}  // Parameter defaults
+            );
             routes.MapRoute(
                 "Default",                                              // Route name
                 "{controller}/{action}/{id}",                           // URL with parameters
