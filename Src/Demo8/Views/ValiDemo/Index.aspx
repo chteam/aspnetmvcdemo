@@ -4,16 +4,16 @@
     ValidateDemo
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-   <script src="<%= Url.Content("~/Scripts/MicrosoftAjax.debug.js") %>" type="text/javascript">
+<%--   <script src="<%= Url.Content("~/Scripts/MicrosoftAjax.debug.js") %>" type="text/javascript">
     </script>
     <script src="<%= Url.Content("~/Scripts/MicrosoftMvcAjax.debug.js") %>" type="text/javascript">
     </script>
     <script src="<%= Url.Content("~/Scripts/MicrosoftMvcValidation.debug.js") %>" type="text/javascript">
-    </script>
-<%--
+    </script>--%>
+
     <script src="/Scripts/jquery-1.3.2.js" type="text/javascript"></script>
     <script src="/Scripts/jquery.validate.js" type="text/javascript"></script>
-   --%>
+    <script src="/Scripts/MicrosoftMvcJQueryValidation.js" type="text/javascript"></script>
     
     
 <%--    <form action="<%=Url.Action("Process") %>" method="post">
