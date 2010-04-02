@@ -80,8 +80,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-mvc-adapter.min.js" />
     <Content Include="Scripts\jquery-mvc.js" />
-    <Content Include="Scripts\MicrosoftMvcJQueryValidation.js" />
+    <Content Include="Scripts\jquery-mvc-adapter.js" />
     <Content Include="Views\Home\ChildPage.ascx" />
     <Content Include="Views\ValiDemo\Custom.aspx" />
     <Content Include="Views\ValiDemo\Index.aspx" />

@@ -13,8 +13,7 @@
 
     <script src="/Scripts/jquery-1.3.2.js" type="text/javascript"></script>
     <script src="/Scripts/jquery.validate.js" type="text/javascript"></script>
-    <script src="/Scripts/MicrosoftMvcJQueryValidation.js" type="text/javascript"></script>
-    
+    <script src="/Scripts/jquery-mvc-adapter.min.js" type="text/javascript"></script>
     
 <%--    <form action="<%=Url.Action("Process") %>" method="post">
     姓名：<%=Html.TextBox("Name") %>
